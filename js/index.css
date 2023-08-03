@@ -1,0 +1,98 @@
+console.log("your index.js file is loaded correctly");
+/* CSS */
+/* Navbar CSS */
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .logo {
+    width: 23%;
+    padding: 1%;
+  }
+  
+  nav {
+    width: 73%;
+    padding: 1%;
+  }
+  
+  ul {
+    width: 50%;
+    margin-left: auto;
+  }
+  
+  /* Hero Image CSS */
+  .heroImg {
+    height: 600px;
+    padding: 25px;
+  }
+  
+  .content {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Footer CSS */
+  footer {
+    background-color: #373738;
+    padding: 10px;
+  }
+  
+  footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+  }
+  
+  footer li {
+    padding: 5px 10px;
+  }
+    .flexContainer {
+      display: flex;
+      justify-content: space-between; /* To evenly space the flex items */
+      margin: 20px 0; /* Add some margin for spacing */
+    }
+  
+    .flexChild {
+      width: 33%; /* Set width to 33% to create three evenly spaced columns */
+      padding: 10px; /* Add padding to the flex children for spacing */
+      box-sizing: border-box; /* Include padding in the element's total width */
+    }
+    /* CSS Grid Container Styles */
+    .workGrid {
+      display: grid;
+      grid-template-areas:
+        "project1 project1-description"
+        "project2 project2-description";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  
+      /* Default styles for larger screens */
+  
+  /* Your existing CSS code for larger screens can be placed here */
+  
+  /* Mobile media query */
+  @media screen and (max-width: 600px) {
+      /* Flexbox changes */
+      .flex-container {
+        flex-direction: column;
+      }
+    
+      .flex-item {
+        width: 100%;
+      }
+    
+      /* Grid changes */
+      .grid-container {
+        grid-template-areas: 
+          "header"
+          "content"
+          "footer";
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: 1fr;
+      }
+    
+      /* Additional mobile-specific styles can be added here */
+    }
